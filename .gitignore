@@ -74,14 +74,3 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 .vsconfig
-Assets/Prefabs/MySpawnButton.prefab.meta
-Assets/Prefabs/MySpawner.prefab.meta
-Assets/ScriptableObjects/PlayerFactory.asset.meta
-Assets/ScriptableObjects/SpawnButton.asset.meta
-Assets/ScriptableObjects/SpawnMenu.asset.meta
-Assets/Scripts/Character/ICharacterFactory.cs.meta
-Assets/Scripts/Character/PlayerCharacterFactory.cs.meta
-Assets/Scripts/Spawning/SpawnMenuBuilder.cs.meta
-Assets/Scripts/Spawning/SpawnMenuButtonData.cs.meta
-Assets/Scripts/Spawning/SpawnMenuGroup.cs.meta
-Assets/ScriptableObjects.meta
