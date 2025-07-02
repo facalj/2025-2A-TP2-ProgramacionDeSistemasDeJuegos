@@ -14,14 +14,21 @@ public class PlayerCharacterFactory : ScriptableObject, ICharacterFactory
 
         if (!result.TryGetComponent<Character>(out var character))
             character = result.AddComponent<Character>();
-        character.Setup(characterModel);
+        if (character is ISetup<CharacterModel> setupCharacter)
+            setupCharacter.Setup(characterModel);
+
 
         if (!result.TryGetComponent<PlayerController>(out var controller))
             controller = result.AddComponent<PlayerController>();
-        controller.Setup(controllerModel);
+        if (controller is ISetup<IPlayerControllerModel> setupController)
+            setupController.Setup(controllerModel);
 
-        if (result.TryGetComponent<Animator>(out var animator))
+        var animator = result.GetComponentInChildren<Animator>();
+        if (animator != null)
             animator.runtimeAnimatorController = animatorController;
+        else
+            Debug.Log("Animator controller not found!!!!!");
+
 
         return result;
     }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9745e7a93bc6eff4ba121b7281c3217f, type: 3}
-  m_Name: SpawnButton
+  m_Name: SpawnButtonVG
   m_EditorClassIdentifier: 
-  ButtonText: Spawn!
-  factoryAsset: {fileID: 11400000, guid: 9d06001542551e540978d0407c6d2389, type: 2}
+  ButtonText: Virtual Guy... Spawn!
+  factoryAsset: {fileID: 11400000, guid: 9f07eaee08578194a9d60ece3dd2fd30, type: 2}
